@@ -37,6 +37,9 @@ class _HomePageState extends State<HomePage> {
                 height: 15.0,
               ),
               _dropDownButton(),
+              const SizedBox(
+                height: 10,
+              ),
               BlocBuilder<TextinputbBloc, TextinputbState>(
                   builder: (context, state) {
                 if (state is TextinputbInitial) {
@@ -51,11 +54,17 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 50,
                           width: 100,
-                          color: Colors.black,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                           child: const Center(
                             child: Text(
                               "Press me",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
                             ),
                           ),
                         ),
@@ -80,11 +89,17 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 50,
                           width: 100,
-                          color: Colors.black,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                           child: const Center(
                             child: Text(
                               "Press me",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
                             ),
                           ),
                         ),
